@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Хайрт минь</h1>
+                <h1 class = "header_text">Хайртай юу хайраа?Насан үүрд хамтдаа байх уу?айннннн?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.giphy.com/media/TDOXQE12zJXekPNXiW/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "100000%тииийймэээээButton" onclick="nextPage()">100000%тииийймэээээ</button>
+                <button class="btn" id="бодноооButton" onmouseover="moveButton()" onclick="moveButton()">боднооо</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "100000%тииийймэээээ.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('бодноооButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('бодноооButton').offsetHeight) - 48;
+                        document.getElementById('бодноооButton').style.left = `${x}px`;
+                        document.getElementById('бодноооButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
